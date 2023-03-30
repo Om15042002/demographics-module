@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #f8f8f9;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d9e2ec;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8f9eb1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #d3dde6;
+}
+
+.topbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  width: 100vw;
+  border-bottom: 1px solid #d3dde6;
+}
+.topbar1 i {
+  font-size: 25px;
+}
+i,
+.topbar2 a {
+  color: #486581;
+  text-decoration: none;
+}
+.topbar2 {
+  height: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #d3dde6;
+}
+.maincontent {
+  height: 100%;
+  background-color:#faf4f4 ;
+  display: flex;
+}
+div.navitems {
+  height: 100%;
+  font-size: smaller;
+  text-align: center;
+  float: left;
+  padding: 10px 5px;
+  margin-left: 4vw;
+  text-decoration: none;
+}
+.content {
+  display: flex;
+  background-color: blueviolet;
+  height: 100%;
+}
+.leftside {
+  flex: 95%;
+  display: flex;
+  flex-direction: column;
+}
+.rightbar {
+  width: 40px;
+  height: 100%;
+  background-color: white;
+  border-left: 1px solid #d3dde6;
+}
+.patientbar {
+  flex: 15%;
+  height: -webkit-calc(100% - 20px);
+  background-color: #faf4f4;
+  padding: 10px;
+}
+.demographicsdetails {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 85%;
+  height: 100%;
+  background-color: #faf4f4;
+}
+.formactions {
+  height: 30px;
+  background-color: #faf4f4;;
+  display: flex;
+  justify-content: end;
+  align-items: middle;
+  
+}
+
+.formcontent {
+  height: 100%;
+  overflow-y: scroll;
+  margin-right: 5px;
+}
+.formcontent > div{
+  width: -webkit-calc(100%-10px);
+  background-color: white;
+  margin: 15px;
+  border-radius: 3px;
+  border-color: #8f9eb1;
+
+}
+.topbar1 ul,
+.rightbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.rightbar i {
+  font-size: 20px;
+}
+.rightbar p {
+  font-size: small;
+  margin-top: 2px;
+}
+.topbar1 li {
+  float: left;
+}
+.topbar1 a,
+.rightbar a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+.leftsection {
+  flex: 80%;
+}
+.rightsection {
+  flex: 20%;
+}
+#search {
+  width: 12vw;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px 10px;
+  font-size: 12px;
+  padding: 0px 10px;
+}
+.modulescrollbar {
+  height: 100%;
+  border: 1px solid #d3dde6;
+  position: relative;
+  overflow-y: scroll;
+  /* text-align: center; */
+  /* margin: 10px; */
+}
+
+.patientbar h4 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.modulescrollbar ul {
+  list-style-type: none;
+  font-size: larger;
+}
+.modulescrollbar li {
+  color: #486581;
+  padding: 6px;
+  margin-left: 5px;
+}
+a {
+  text-decoration: none;
+  color: #486581;
+}
+hr {
+  width: 90%;
+  border-color: #f8fdff;
+  margin: auto;
+}
+
+#verify,#save{
+  width: 80px;
+  height: 25px;
+  margin: 0px 10px;
+  background-color: white;
+  border-radius: 4px;
+  color: #929fac;
+  border-width: 1px;
+}
+#cancel{
+  height: 25px;
+  width: 150px;
+  margin: 0px 10px;
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: white;
+  color: #486581;
+  opacity: 0.6;
+}
+#isactive{
+  accent-color: #0fd8ac;
+  height: 20px;
+  margin-left: 10px;
+}
+.personalinfo{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+}
+.personalinfo input , .personalinfo select{
+  border: 1px solid #d9dee6;
+  width:220px ;
+  height: 18px;
+}
+.personalinfo select{
+  height: 20px;
+}
+.personalinfo label{
+  font-size: 13px;
+}
+.personalinfo > div {
+  display: flex;
+  flex-direction: row;
+  min-width: 100px;
+  /* margin: 0px 100px;
+   */
+}
+div.labels{
+  display: flex;
+  flex-direction: column;
+  align-items:end ;
+  margin-right: 10px;
+}
+div.inputfields{
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 10px; */
+}
+div.labels > div , div.inputfields > div{
+  margin-top: 8px;
+  height: 20px;
+}
+#profilepic , #profilepic >img{
+  height: 120px;
+  width: 120px;
+  border-radius: 20px;
+  box-shadow:2px 5px 10px #ada9a9;
+}
+#profilepicgap{
+  margin-top: 165px;
+}
+
+textarea{
+  resize: vertical;
+  width: 220px;
+}
